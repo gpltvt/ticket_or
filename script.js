@@ -25,10 +25,6 @@ function setup(cv, cell, idx){
   const g = ctx.createLinearGradient(0,0,W,H);
   g.addColorStop(0,'#f6dc92'); g.addColorStop(.5,'#c9972f'); g.addColorStop(1,'#f1d27e');
   ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
-  for(let k=0;k<45;k++){
-    ctx.fillStyle=Math.random()<.5?'rgba(255,255,255,.85)':'rgba(120,80,10,.35)';
-    ctx.beginPath(); ctx.arc(Math.random()*W,Math.random()*H,(Math.random()*1.8+.5)*dpr,0,7); ctx.fill();
-  }
   ctx.fillStyle='rgba(90,55,5,.55)'; ctx.font=(H*.45)+'px "Limelight",serif';
   ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('✦',W/2,H/2+H*.02);
 
@@ -103,7 +99,7 @@ function party(){
 }
 
 // Paillettes d’ambiance
-for(let i=0;i<36;i++){
+for(let i=0;i<150;i++){
   const s=document.createElement('span'); s.className='spark';
   s.style.left=Math.random()*100+'vw'; s.style.top=Math.random()*100+'vh';
   s.style.animationDelay=(Math.random()*3)+'s'; s.style.animationDuration=(2+Math.random()*3)+'s';
