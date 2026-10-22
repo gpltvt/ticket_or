@@ -1,8 +1,8 @@
 // Grille : ligne du milieu = 3 cœurs gagnants (aucun autre alignement possible)
 const SYMS = [
-  ['★','s'],['♥','h'],['♦','d'],
+  ['★','s'],['♥','h'],['★','s'],
   ['♥','h'],['♥','h'],['♥','h'],
-  ['♦','d'],['★','s'],['♠','d']
+  ['★','s'],['★','s'],['★','s']
 ];
 const WIN = [3,4,5];
 const grid = document.getElementById('grid');
