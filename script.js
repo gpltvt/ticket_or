@@ -2,7 +2,7 @@
 const SYMS = [
   ['★','s'],['♥','h'],['★','s'],
   ['♥','h'],['♥','h'],['♥','h'],
-  ['★','s'],['★','s'],['★','s']
+  ['★','s'],['★','s'],['♥','h']
 ];
 const WIN = [3,4,5];
 const grid = document.getElementById('grid');
@@ -99,7 +99,7 @@ function party(){
 }
 
 // Paillettes d’ambiance
-for(let i=0;i<150;i++){
+for(let i=0;i<65;i++){
   const s=document.createElement('span'); s.className='spark';
   s.style.left=Math.random()*100+'vw'; s.style.top=Math.random()*100+'vh';
   s.style.animationDelay=(Math.random()*3)+'s'; s.style.animationDuration=(2+Math.random()*3)+'s';
