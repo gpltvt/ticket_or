@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ticket d’or</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="conf"></canvas>
+<canvas id="fx"></canvas>
+<div class="wrap">
+  <div class="kicker">Ce soir, le spectacle est pour toi</div>
+  <h1>Ticket d’or</h1>
+  <br>
+
+  <div class="ticket">
+    <div class="label"><b>★</b> THE GREATEST GIFT <b>★</b></div>
+    <div class="grid" id="grid"></div>
+    <p class="rule">Gratte les 9 cases. Trouve <b>3 cœurs alignés</b> et le rideau s’ouvre.</p>
+  </div>
+
+  <div class="result" id="result">
+    <div class="burst">♥ ♥ ♥</div>
+    <h2>GAGNÉ !</h2>
+    <p>Tu as gagné une place pour aller voir</p>
+    <div class="artist">Pierre de Maere</div>
+    <p>Joyeux anniversaire!</p>
+    <div class="btns"><button id="again">Encore des confettis!</button><button id="close">Revoir mon ticket</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
